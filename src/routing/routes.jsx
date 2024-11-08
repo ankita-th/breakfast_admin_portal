@@ -5,6 +5,7 @@ import NotFound from "../pages/NotFound";
 import Login from "../pages/Login";
 import AddEditProduct from "../pages/AddEditProduct";
 import Categories from "../pages/Categories";
+import Register from "../pages/register";
 
 export const routes = [
   {
@@ -25,6 +26,11 @@ export const routes = [
   {
     path: "/login",
     element: <Login />,
+    public: true,
+  },
+  {
+    path: "/register",
+    element: <Register />,
     public: true,
   },
   {
